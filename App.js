@@ -1,23 +1,16 @@
 import React from 'react';
-import HomeScreen from './screens/HomeSreen'
-import SecondScreen from './screens/SecondScreen'
-import{createAppContainer,createSwitchNavigator} from 'react-navigation'
-
+import{Provider as PaperProvider} from 'react-native-paper'
+import AppNavigator from './JS/navigation'
 export default class App extends React.Component {
   
   render(){
     return (
-      <AppContainer/>
+      <PaperProvider>
+        <AppNavigator/>
+      </PaperProvider>
     );
   
   }
   
 }
 
-
-var AppNavigator=createSwitchNavigator({
-  HomeScreen:HomeScreen,
-  SecondScreen:SecondScreen
-})
-
-const AppContainer=createAppContainer(AppNavigator);
