@@ -3,9 +3,12 @@ import {View,StyleSheet,FlatList} from 'react-native'
 import MyHeader from '../components/MyHeader'
 import {Text,FAB,List} from 'react-native-paper'
 
+
 function HomeScreen ({navigation}){
      
          return(
+           <>
+           <MyHeader titleText='All Notes'/>
            <View style={styles.container}>
              <View style={styles.titlecontainer}>
           <Text style={styles.title}>
@@ -20,6 +23,7 @@ function HomeScreen ({navigation}){
              onPress={()=>navigation.navigate('TakeNotes')}
              />
              </View>
+             </>
          )
      }
 

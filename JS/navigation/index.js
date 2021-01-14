@@ -1,7 +1,7 @@
 import{createAppContainer} from 'react-navigation'
 import{createStackNavigator} from 'react-navigation-stack'
 import HomeScreen from '../screens/HomeScreen'
-import TakeNotes from '../screens/TakeNotes'
+import AddNotes from '../screens/TakeNotes'
 
 
 const StackNavigator=createStackNavigator({
@@ -9,7 +9,7 @@ const StackNavigator=createStackNavigator({
         screen:HomeScreen
     },
     TakeNotes:{
-        screen:TakeNotes
+        screen:AddNotes
     },
 
 
