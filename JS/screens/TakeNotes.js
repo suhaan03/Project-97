@@ -16,7 +16,7 @@ function AddNotes({navigation}){
            <>
                <MyHeader titleText='Add a New'/>
            <IconButton icon="close" size={25} color='white' onPress={()=>navigation.goBack()}
-           style={styles.IconButton}
+           style={styles.iconButton}
            />
                <View style={styles.container}>
                  <TextInput label="Title"
@@ -79,6 +79,14 @@ fab:
   right:0,
   bottom:10,
   backgroundColor:"red"
+},
+iconButton:
+{
+  backgroundColor:'yellow',
+  position:'absolute',
+  right:0,
+  top:40,
+  margin:10
 }
 })
 
